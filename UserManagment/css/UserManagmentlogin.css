@@ -1,0 +1,50 @@
+
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+header{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+Main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.login{
+
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginorsignup{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    padding-top: 7px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

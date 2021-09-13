@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/UserManagment/css/UserManagmentsignup.css">
+    <script  defer src="/MarketPlace/js/signup.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+
+        MarketPlace System Sign Up
+    </header>
+
+    <Main>
+
+        <div class="login">
+            <form id="prospects_form" class="signupform" onsubmit="signup()" >
+             <div class="leftside">
+                <div class="form-group">
+                    <label for="username">User Name:</label>
+                    <input pattern="[A-Za-z0-9]*" maxlength="60" type="text" class="form-control" id="username"  required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input  type="password" class="form-control" id="pwd" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Verify Password:</label>
+                    <input  type="password" class="form-control" id="pwd2" required>
+                    <span id="message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="proImg">your profile image :</label>
+                    <input type="file" accept="image/jpg, image/jpeg" class="form-control" id="proImg" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control" id="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" class="form-control" id="lastname" required>
+                </div>
+             </div>
+             <div class="SizedBox"></div>
+
+             <div class="rightside">
+               
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" class="form-control" id="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label for="City">City:</label>
+                    <input type="text" class="form-control" id="City" list="wizards-list" required>
+
+                    <datalist id="wizards-list">
+                        <option>haifa</option>
+                        <option>telaviv</option>
+                        <option>petah</option>
+                        <option>omalfahem</option>
+                        <option>keryat ata</option>
+                        <option>ashkelon</option>
+                        <option>eilat</option>
+                        <option>ramat gan</option>
+                        <option>faradis</option>
+                        <option>kofor kare3 </option>
+                    </datalist>
+                </div>
+                <div class="form-group">
+                    <label for="Street">Street:</label>
+                    <input type="text" class="form-control" id="Street" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Number:</label>
+                    <input type="number"  min="0" class="form-control" id="number" required>
+                </div>
+
+             </div>
+            
+              
+             <div class="buttonsrightside">
+               
+                <div class="loginorsignup">
+                    <button type="submit" id="signupbutton"  class="btn btn-default">SignUp</button>
+
+                </div>
+             </div>
+               
+
+            </form>
+
+
+        </div>
+
+    </Main>
+
+    <footer>
+        $_Moamin_$
+    </footer>
+
+
+
+</body>
+
+</html>

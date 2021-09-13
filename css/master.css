@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #47b4f3;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.setting-box {
+  position: fixed;
+  left: -200px;
+  top: 0;
+  background: rgba(255, 255, 255);
+  width: 200px;
+  z-index: 1000;
+  height:8.4rem;
+  transition: 0.3;
+}
+.setting-box.open {
+  left: 0;
+}
+.setting-box .toggle {
+  position: absolute;
+  right: -30px;
+  top: 100px;
+  padding: 8px 0;
+  width: 30px;
+
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+}
+.setting-box .option-box {
+  padding: 20px;
+}
+.setting-box .option-box h4 {
+  margin: 0;
+  color: #666;
+}
+.setting-box .option-box .color-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.setting-box .option-box .color-list li {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  display: inline-block;
+}
+
+.setting-box .option-box .color-list li.active {
+  opacity: 1;
+}
+
+.setting-box .option-box .color-list li:first-child{
+    background-color: var(--main-color);
+}
+.setting-box .option-box .color-list li:nth-child(2){
+    background-color:#E91e63;
+}
+.setting-box .option-box .color-list li:nth-child(3){
+    background-color:#009688;
+}
+.setting-box .option-box .color-list li:nth-child(4){
+    background-color:rgb(119, 184, 148);
+}
+.setting-box .option-box .color-list li:nth-child(5){
+    background-color:#4caf50;
+}
+.landingpage {
+  min-height: 100vh;
+  background-image: url(../img/img1.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.landingpage .overlay {
+  background-color: rgb(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.main{
+  flex-grow: 1;
+  display :flex ;
+  justify-content: center;
+  align-items: center;
+} 
+.header {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.header .logo {
+  width: 300px;
+  padding: 15px;
+  font-weight: bold;
+}
+.header .links {
+  list-style: none;
+
+  text-align: right;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 20px;
+  font-size: 15px;
+}
+.header .links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.header .links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3;
+}
+.header .links li a:hover,
+.header .links li a.active {
+  color: var(--main-color);
+}
+.introduction {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+}
+.introduction h1 {
+  font-size: 35px;
+  margin: 0 0 10px;
+}
+.introduction h1 span {
+  color: var(--main-color);
+}
+.introduction p {
+  line-height: 1.6;
+  font-size: 17px;
+}
+footer{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.MainButtonsdiv{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+}
+button{
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.SizedBox{
+  width: 20px;
+}

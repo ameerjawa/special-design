@@ -1,0 +1,57 @@
+
+
+.maincontacts {
+    flex-grow: 1;
+    border: 0.2px solid black;
+    border-radius: 10px;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 1px 2px #7e7e7e;
+  }
+  .actions ul {
+    display: grid;
+    list-style: none;
+    padding-left: 30px;
+    grid-template-columns:  repeat(8,auto);
+    border-bottom: 1px black solid;
+
+  }
+
+  .actions ul h1 {
+
+    font-size: 1.5rem;
+
+
+  }
+
+  #usercomponent{
+      list-style: none;
+      display: grid;
+
+      grid-template-columns:  repeat(8,auto);
+      padding-top: 10px;
+      padding-left: 60px;
+      border-bottom: 2px black solid;
+      
+  }
+
+  #proimg{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+  }
+  .fullname{
+      padding-left: 70px;
+  }
+
+  .birthdate{
+    padding-left: 50px;
+
+  }
+
+.adminheader{
+      display :flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }

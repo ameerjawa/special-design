@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #B3E5FC;
+    border-radius: 10px
+}
+
+header,footer{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border: 2px solid black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+
+    padding-left: 10px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number1 {
+    font-weight: 500
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number2 {
+    font-weight: 500
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number3 {
+    font-weight: 500
+}
+
+#logoutbtn{
+    background-color: red;
+}
+#editprofilebtn{
+    background-color: burlywood;
+}
